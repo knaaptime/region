@@ -119,6 +119,7 @@ class MaxPRegionsHeu:
                 best_obj_value = obj_value
                 best_partition = partition
         self.labels_ = best_partition
+        return self
 
     fit = copy_func(fit_from_scipy_sparse_matrix)
     fit.__doc__ = "Alias for :meth:`fit_from_scipy_sparse_matrix`.\n\n" \
